@@ -4,7 +4,29 @@
     display: block;
     margin: auto;
 }
+body.inProgress{
+    background-image: url("../img/inProgress.jpg");
+}
 
 body{
+    background-color: white;
+}
+
+#form1{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
     background-color: pink;
+}
+
+#channel{
+    width: 250px; 
+    height: 50px; 
+}
+
+#formButton{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }

@@ -17,7 +17,7 @@ function itx_split(){
         document.formulario1.brand.length = num_brands;
         //para cada brand del array, la pongo en el select
         for(i=0; i<num_brands; i++){
-             document.formulario1.brand.options[i].value=mis_brands[i];
+            document.formulario1.brand.options[i].value=mis_brands[i];
             document.formulario1.brand.options[i].text=mis_brands[i];
         }
     }else{
@@ -30,3 +30,9 @@ function itx_split(){
     //hacer un reset de las brands
     document.formulario1.brand.options[0].selected = true;     
 }
+
+function inProgress(){
+    location.replace("html/exe.html");
+    alert("Funcion aun en desarrollo, disculpen las molestias");
+}
+

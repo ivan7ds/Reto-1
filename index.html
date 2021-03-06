@@ -18,21 +18,46 @@
             </ul>
         </nav>
     </header>
- 
-    <form name="formulario1" action="#">
-        <select class="seleccion" name="split" onchange="itx_split()">
-            <option value="0">Seleccione Split
-            <option value="1">SPLIT A
-            <option value="2">SPLIT B
-            <option value="3">SPLIT C
-            <option value="4">SPLIT D
-        </select>
+    <header id="h1">
+        <nav>
+            <ul>
+                <li><a href="html/informe.html" target="_black">Informe</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <select class="seleccion" name="brand">
-            <option value="-">-
-        </select>
-        
-    </form>
+    <div id="form1">
+        <form name="formulario1" action="#">
+            <select class="seleccion" name="split" onchange="itx_split()">
+                <option value="0">Seleccione Split
+                <option value="1">SPLIT A
+                <option value="2">SPLIT B
+                <option value="3">SPLIT C
+                <option value="4">SPLIT D
+            </select>
+    
+            <select class="seleccion" name="brand">
+                <option value="-">-
+            </select>
+    
+            <fieldset id="channel">
+                <legend>Select Channel</legend>
+                <label>
+                    <input type="radio" name="channel" value="1">WEBSTD 
+                </label>
+                <label>
+                    <input type="radio" name="channel" value="2">WEBMOB 
+                </label>
+                <label>
+                    <input type="radio" name="channel" value="3">REST 
+                </label>
+            </fieldset>
+            <div id="formButton">
+                <button onclick="inProgress()">Validar usuarios</button>
+                <input type="reset" value="Resetear formulario">
+            </div>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
