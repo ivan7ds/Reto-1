@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicacion para verificar la integridad de los usuarios"/>
+    <meta name="author" content="ivanmlop"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Verificador de usuarios</title>
+</head>
+<body>
+    <header id="logo">
+        <nav>
+            <ul>
+                <img class="logo" src="img/cliente.jpg"/>
+            </ul>
+        </nav>
+    </header>
+ 
+    <form name="formulario1" action="#">
+        <select class="seleccion" name="brand" onchange="itx_brand()">
+            <option value="0">Seleccione Split
+            <option value="1">SPLIT A
+            <option value="2">SPLIT B
+            <option value="3">SPLIT C
+            <option value="4">SPLIT D
+        </select>
+
+        <select class="seleccion" name="opt">
+            <option value="-">-
+        </select>
+        
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

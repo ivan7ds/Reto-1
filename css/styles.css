@@ -1,0 +1,10 @@
+.logo{
+    width: 400px; 
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+body{
+    background-color: pink;
+}
