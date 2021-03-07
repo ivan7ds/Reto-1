@@ -1,6 +1,7 @@
 .logo{
-    width: 400px; 
-    height: 150px;
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -20,13 +21,25 @@ body{
     background-color: pink;
 }
 
-#channel{
-    width: 250px; 
-    height: 50px; 
+.channel{
+    min-width: min-content;
+    margin: auto;
 }
 
 #formButton{
     margin: auto;
     width: 50%;
     padding: 10px;
+}
+
+#comboBox{
+    margin: auto;
+    width: 50%;
+    padding: 10px;  
+}
+
+@media only screen and (max-width: 600px) {
+    #form1{
+
+    }
 }

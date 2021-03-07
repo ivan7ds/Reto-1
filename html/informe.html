@@ -10,7 +10,7 @@
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
     <title>Informe</title>
 </head>
-<body class="inProgress">
+<body class="inProgress" onload="readInforme()">
     <header id="logo">
         <nav>
             <ul>
@@ -26,24 +26,30 @@
         </nav>
     </header>
     
-    <button onclick="leeArchivo('informe.txt')">Validar usuarios</button>
+    <input type="file" id="archivo"><br>
+    <textarea rows="10" cols="80" id="editor"></textarea>
+    <br>
+    <p id="datos"></p>
 
-    <script type="text/javascript">
-
-            if (window.XMLHttpRequest)
-            {// code for IE7+, Firefox, Chrome, Opera, Safari
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {// code for IE6, IE5
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.open("GET","informe.txt",false);
-            xmlhttp.send();
-            xmlDoc=xmlhttp.responseText;
-
-
-
+    <script src="../js/main.js"></script>
+<!--
+    <script>
+        window.addEventListener('load', inicio, false);
+    
+        function inicio() {
+            document.getElementById('archivo').addEventListener('change', cargar, false);               
+        }
+    
+        function cargar(ev) {
+            var arch=new FileReader();
+            arch.addEventListener('load',leer,false);
+            arch.readAsText(ev.target.files[0]);
+        }
+        
+        function leer(ev) {
+            document.getElementById('editor').value=ev.target.result;
+        }
     </script>
+-->
 </body>
 </html>
