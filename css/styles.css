@@ -5,6 +5,9 @@
     display: block;
     margin: auto;
 }
+body{
+    background-color: white;
+}
 body.inProgress{
     background-image: url("../img/inProgress.jpg");
     width: 100%;
@@ -14,37 +17,46 @@ body.inProgress{
     margin: auto; 
 }
 
-body{
-    background-color: white;
-}
-
 #form1{
     margin: auto;
-    width: 50%;
+    width: 60%;
+	display:flex;
     border: 3px solid green;
     padding: 10px;
     background-color: pink;
+	justify-content: center;
+	align-items: center;
+}
+@media(min-width:769px){
+	#form1{
+		width: 25%;
+	}	
 }
 
 .channel{
     min-width: min-content;
     margin: auto;
+	overflow:hidden;
+}
+@media(min-width:360px){
+	.legendChannel{
+		display: flex;
+		text-align: center;
+	}
 }
 
 #formButton{
     margin: auto;
-    width: 50%;
-    padding: 10px;
 }
 
 #comboBox{
-    margin: auto;
+    margin: left;
     width: 50%;
-    padding: 10px;  
+    padding: 10px;	
 }
-
-#editor{
-    margin: auto;
-    width: 50%;
-    padding: 10px; 
+@media(max-width:280px){
+	#comboBox{
+		display: flex;
+		text-align: left;
+	}	
 }
